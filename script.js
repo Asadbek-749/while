@@ -142,7 +142,7 @@ while (sumL < 200) {
   kun++;
   sumL *= 1 + p1 / 100;
 }
-console.log(kun, "kunda", parseInt(sumL) + " km masofa bosadi");
+console.log(kun + " kunda", parseInt(sumL), " km masofa bosadi");
 
 // 17-masala
 let N = 20;
@@ -178,28 +178,76 @@ while (N2 > 0) {
 }
 console.log("N ning raqamlar yig'indisi:", sumN2);
 
-// 20-masala, 21-masala
+// 20-masala,
 let n20 = 2223;
 let ikkiBormi = false;
-let toqBormi = false;
 
 while (n20 > 0) {
   console.log(n20 % 10);
 
   if (n20 % 10 === 2) {
     ikkiBormi = true;
-  } else if (n20 % 2 != 0) {
-    toqBormi = true;
   }
+
   n20 = parseInt(n20 / 10);
 }
 
 if (ikkiBormi === true) {
   console.log("Ikki bor");
-} else if (toqBormi === true) {
-  console.log("Toq raqam bor");
 } else {
   console.log("Ikki yo'q");
 }
 
+// 21-masala
+let Nson2 = 235478;
+let toqBormi = false;
+
+while (Nson2 > 0) {
+  console.log(Nson2 % 10);
+
+  if (Nson2 % 2 != 0) {
+    toqBormi = true;
+  }
+  Nson2 = parseInt(Nson2 / 10);
+}
+
+if (toqBormi === true) {
+  console.log("Toq raqam bor");
+} else {
+  console.log("Toq raqam yo'q");
+}
+
+// 22-masala
+let sonT = 7;
+let i2 = 2;
+let tubSon = true;
+
+while (i2 < sonT) {
+  if (sonT % i2 == 0) {
+    tubSon = false;
+    break;
+  }
+  i2++;
+}
+
+if (tubSon === true) {
+  console.log("Tub son");
+} else {
+  console.log("Tub son emas");
+}
+
+// 23-masala
+let a = 6;
+let b = 8;
+
+while (b != 0) {
+  let temp = b;
+  b = a % b;
+  a = temp;
+  console.log("Oraliq natija -> a:", a, "b:", b); 
+}
+
+console.log("EKUB:", a);
+
+// 24-masala
 
