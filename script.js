@@ -279,7 +279,6 @@ while (b != 0) {
 
 console.log("EKUB:", a);
 
-
 // 24-masala
 // 25-masala
 let nf = 13;
@@ -288,18 +287,17 @@ let f2 = 1;
 let fibonachiSoni = false;
 
 while (nf > f2) {
-  console.log("temp:", (tepm1 = f1));
-  console.log("f1: ", (f1 = f1 + f2));
-  console.log("f2: ", (f2 = tepm1));
+  tepm1 = f1;
+  f1 = f1 + f2;
+  f2 = tepm1;
   if (f2 === nf) {
     fibonachiSoni = true;
   }
 }
 
 if (fibonachiSoni === true) {
-  console.log("Fibonachi soni");
+  console.log("Fibonachi soni",f2);
   console.log("n dan katta bo'lgan fibonachi soni:", f1);
-
 } else {
   console.log("Fibonachi soni emas");
 }
