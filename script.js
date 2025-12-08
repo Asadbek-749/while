@@ -1,3 +1,33 @@
+// // 1-masala
+// let A = 20;
+// let B = 15;
+
+// while (A >= B) {
+//   A = A - B;
+// }
+// console.log("A kesmaning bo'sh qismi:", A);
+
+// // 2-masala
+// let A1 = 20;
+// let B1 = 10;
+// let Soni = 0;
+// while (A1 >= B1) {
+//   A1 = A1 - B1;
+//   Soni++;
+// }
+// console.log("Joylashishlar soni:", Soni);
+
+// // 3-masala
+// let N = 23;
+// let M = 4;
+// let butunSon = 0;
+// while (N >= M) {
+//   N = N - M;
+//   butunSon++;
+// }
+// console.log("Butun Son:", butunSon);
+// console.log("Qoldiq Son:", N);
+
 // 4-masala
 let n = 9;
 let x = 1;
@@ -244,10 +274,32 @@ while (b != 0) {
   let temp = b;
   b = a % b;
   a = temp;
-  console.log("Oraliq natija -> a:", a, "b:", b); 
+  console.log("Oraliq natija -> a:", a, "b:", b);
 }
 
 console.log("EKUB:", a);
 
-// 24-masala
 
+// 24-masala
+// 25-masala
+let nf = 13;
+let f1 = 1;
+let f2 = 1;
+let fibonachiSoni = false;
+
+while (nf > f2) {
+  console.log("temp:", (tepm1 = f1));
+  console.log("f1: ", (f1 = f1 + f2));
+  console.log("f2: ", (f2 = tepm1));
+  if (f2 === nf) {
+    fibonachiSoni = true;
+  }
+}
+
+if (fibonachiSoni === true) {
+  console.log("Fibonachi soni");
+  console.log("n dan katta bo'lgan fibonachi soni:", f1);
+
+} else {
+  console.log("Fibonachi soni emas");
+}
